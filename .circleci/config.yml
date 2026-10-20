@@ -56,7 +56,16 @@ jobs:
     steps:
       - node/install:
           node-version: '14.15'
-      - eb/setup
+      - run:
+          name: Install Elastic Beanstalk CLI
+          command: |
+            sudo apt-get update
+            sudo apt-get install -y python3-pip python3-venv
+            python3 -m pip install --user pipx
+            python3 -m pipx install awsebcli
+            export PATH="$HOME/.local/bin:$PATH"
+            echo 'export PATH="$HOME/.local/bin:$PATH"' >> "$BASH_ENV"
+            eb --version
       - aws-cli/setup
       - checkout
       - run:
