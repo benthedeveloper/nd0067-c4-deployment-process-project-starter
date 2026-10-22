@@ -16,15 +16,21 @@ The Angular app is built and output to the `www` directory, then uploaded to an 
 
 The current deployment serves the frontend at [the S3 website endpoint](http://benh-udagram-bucket.s3-website-us-east-1.amazonaws.com).
 
+![Screenshot of frontend S3 bucket](screenshots/udagram-s3-bucket.png)
+
 ### API: AWS Elastic Beanstalk
 
 The API is a Node.js/Express app deployed to the Elastic Beanstalk application named `udagram-api`, in the `udagram-api-dev` environment. The repo's Elastic Beanstalk configuration specifies the `us-east-1` region and the Node.js 22 platform on Amazon Linux 2023. The API listens on port `8080`; Elastic Beanstalk provides its environment endpoint for clients to call.
 
 The API endpoint used by this deployment is [udagram-api-dev](http://udagram-api-dev.us-east-1.elasticbeanstalk.com/api/v0/feed). The classroom environment may be stopped when not in use, so this endpoint is not guaranteed to remain available.
 
+![Screenshot of Elastic Beanstalk](screenshots/udagram-elastic-beanstalk.png)
+
 ### Database: Amazon RDS
 
 Amazon RDS hosts the application's PostgreSQL database. The API reads the database host, name, username, and password from environment variables and connects using Sequelize. Database connection settings enable SSL.
+
+![Screenshot of RDS](screenshots/udagram-database.png)
 
 ### Uploaded images: Amazon S3
 
