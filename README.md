@@ -8,7 +8,7 @@ CircleCI build status:
 
 [![CircleCI](https://dl.circleci.com/status-badge/img/circleci/T16sWxW2M9zeske9LoS4Hb/9Aww2gTJ89f324YdUfryT1/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/circleci/T16sWxW2M9zeske9LoS4Hb/9Aww2gTJ89f324YdUfryT1/tree/master)
 
-![Screenshot of working deployed Udagram app](documentation/screenshots/udagram-working-live.png)
+![Screenshot of working deployed Udagram app](screenshots/udagram-working-live.png)
 
 The deployed app frontend can be found here: [http://benh-udagram-bucket.s3-website-us-east-1.amazonaws.com](http://benh-udagram-bucket.s3-website-us-east-1.amazonaws.com).
 

@@ -38,8 +38,8 @@ After pushing a commit, open the project in CircleCI and select the pipeline to 
 
 The CircleCI screenshots in this directory show the pipeline history and the project environment-variable settings:
 
-- [Pipeline history](screenshots/circle-ci-screenshot.png)
-- [Environment-variable settings](screenshots/circle-ci-env-vars.png)
+- [Pipeline history](../screenshots/circle-ci-screenshot.png)
+- [Environment-variable settings](../screenshots/circle-ci-env-vars.png)
 
 ## Configuration
 
